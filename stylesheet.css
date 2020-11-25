@@ -1,0 +1,915 @@
+:root {
+    --main-width: 1600px
+}
+
+body {
+    background: #ffffff;
+    font-size: 1.6rem;
+    font-family: "sans-serif", "Sawarabi Mincho", "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E",
+        "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    cursor: default;
+    min-width: var(--main-width);
+    text-align: justify;
+    text-justify: inter-ideograph;
+    background: #ffefe8
+}
+
+.header-wrap {
+    width: 100%;
+    border-bottom: 1px solid;
+    top: 0;
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    height: 60px;
+    background: #ffefe8;
+    padding: 0 200px;
+    border-bottom: 1px solid #000000
+}
+
+.logo {
+    width: 200px;
+    margin: 0 auto
+}
+
+.logo img {
+    width: 80px
+}
+
+.headerNav {
+    width: var(--main-width)
+}
+
+.headerNav ul {
+    max-width: var(--sub-width);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    border-left: 1px solid #000000
+}
+
+.headerNav ul li {
+    width: 100%;
+    text-align: center;
+    height: 60px;
+    padding-top: 15px;
+    border-right: 1px solid #000000
+}
+
+.headerNav ul li:hover {
+    background: #cca492;
+    transition: 1.0s
+}
+
+.headerNav ul li a {
+    font-weight: bolder;
+    font-size: 3rem;
+    width: 200px;
+    display: block;
+    color: #080808;
+    position: relative;
+    height: 100%
+}
+
+.headerNav ul li a::after {
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 5px;
+    background: #ff5d5d;
+    transform: scale(0, 1);
+    transform-origin: center top;
+    transition: 0.5s
+}
+
+.headerNav ul li a:hover::after {
+    transform: scale(1, 1)
+}
+
+.hamburger_wrap {
+    display: none
+}
+
+.top-wrap {
+    height: 100vh;
+    background-size: cover;
+    background-image: url("../img/top_img.png")
+}
+
+.top-wrap .top-inner .top-title {
+    color: #fff;
+    text-align: center;
+    font-size: 10rem;
+    padding-top: 300px;
+    font-weight: bolder;
+    text-shadow: 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000
+}
+
+.top-wrap .top-inner .top-fade {
+    display: flex;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 3px #ff5d5d, 0 0 3px #ff5d5d, 0 0 3px #ff5d5d, 0 0 3px #ff5d5d, 0 0 3px #ff5d5d, 0 0 3px #ff5d5d, 0 0 3px #ff5d5d, 0 0 3px #ff5d5d, 0 0 3px #ff5d5d, 0 0 3px #ff5d5d, 0 0 3px #ff5d5d, 0 0 3px #ff5d5d, 0 0 3px #ff5d5d, 0 0 3px #ff5d5d, 0 0 3px #ff5d5d, 0 0 3px #ff5d5d;
+    font-weight: bolder;
+    font-size: 5rem;
+    margin: 0 auto;
+    padding: 50px
+}
+
+.top-wrap .top-inner .top-fade .top-text {
+    padding-top: 20px;
+    text-align: center;
+    margin: 0 auto
+}
+
+.content-wrap {
+    padding-bottom: 100px
+}
+
+.content-wrap .content-title {
+    background-image: url(../img/company_top.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 70px
+}
+
+.content-wrap .content-title h2 {
+    color: #fff;
+    padding: 60px 0 0;
+    line-height: 1.5;
+    margin: 0 auto;
+    width: 200px;
+    text-align: center;
+    font-size: 4rem;
+    border-bottom: 3px solid #ff532a
+}
+
+.content-wrap .content-img {
+    margin: 50px 200px 0;
+    display: flex;
+    justify-content: space-between
+}
+
+.content-wrap .content-img figure {
+    position: relative
+}
+
+.content-wrap .content-img figure .back {
+    top: 20px;
+    left: 20px;
+    position: absolute;
+    width: 300px
+}
+
+.content-wrap .content-img figure .fadein {
+    width: 300px;
+    opacity: 0;
+    transform: translateY(20px)
+}
+
+.content-wrap .content-img figure .one {
+    transition: all 1s
+}
+
+.content-wrap .content-img figure .two {
+    transition: all 2s
+}
+
+.content-wrap .content-img figure .three {
+    transition: all 3s
+}
+
+.content-wrap .content-area {
+    margin: 100px 200px 0
+}
+
+.content-wrap .content-area .content-listA-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px
+}
+
+.content-wrap .content-area .content-listA-wrap .content-listA {
+    line-height: 1.5;
+    width: 40%
+}
+
+.content-wrap .content-area .content-listA-wrap .content-listA h3 {
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 50px
+}
+
+.content-wrap .content-area .content-listA-wrap .content-listA p {
+    font-size: 2.5rem;
+    text-align: justify;
+    text-justify: inter-ideograph
+}
+
+.content-wrap .content-area .content-listB-wrap {
+    display: flex;
+    justify-content: space-between
+}
+
+.content-wrap .content-area .content-listB-wrap .content-listB {
+    line-height: 1.5;
+    width: 20%;
+    text-align: center;
+    position: relative
+}
+
+.content-wrap .content-area .content-listB-wrap .content-listB h4 {
+    background: #000000;
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 50px
+}
+
+.content-wrap .content-area .content-listB-wrap .content-listB .content-box {
+    height: 200px;
+    background: #000
+}
+
+.content-wrap .content-area .content-listB-wrap .content-listB .content-box p {
+    font-size: 2.5rem;
+    background: #ffffff
+}
+
+.company-wrap {
+    padding-bottom: 100px
+}
+
+.company-wrap .company-title {
+    background-image: url(../img/company_top.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 70px
+}
+
+.company-wrap .company-title h2 {
+    color: #fff;
+    padding: 60px 0 0;
+    line-height: 1.5;
+    margin: 0 auto;
+    width: 200px;
+    text-align: center;
+    font-size: 4rem;
+    border-bottom: 3px solid #ff532a
+}
+
+.company-wrap .company-box {
+    background: #fff;
+    margin: 100px 200px;
+    padding: 80px 70px;
+    text-align: left;
+    font-family: "Meiryo",
+        "メイリオ";
+    border-radius: 10px
+}
+
+.company-wrap .company-box table {
+    margin: 0 auto;
+    font-size: 2rem;
+    letter-spacing: 3px
+}
+
+.company-wrap .company-box table tr {
+    margin-bottom: 20px;
+    line-height: 2;
+    border-bottom: 2px solid #b9b1b0
+}
+
+.company-wrap .company-box table tr td {
+    margin-left: 100px;
+    padding: 20px 0;
+    display: block
+}
+
+.history-wrap {
+    padding-bottom: 100px
+}
+
+.history-wrap .history-title {
+    background-image: url(../img/company_top.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 70px
+}
+
+.history-wrap .history-title h2 {
+    color: #fff;
+    padding: 60px 0 0;
+    line-height: 1.5;
+    margin: 0 auto;
+    width: 200px;
+    text-align: center;
+    font-size: 4rem;
+    border-bottom: 3px solid #ff532a
+}
+
+.history-wrap .history-box {
+    margin: 100px 200px;
+    font-size: 2rem;
+    line-height: 2
+}
+
+.history-wrap .history-box table {
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid #404040
+}
+
+.history-wrap .history-box table tr th {
+    padding: 10px 30px;
+    border-bottom: 1px solid #404040
+}
+
+.history-wrap .history-box table tr th br {
+    display: none
+}
+
+.history-wrap .history-box table tr .brnasi {
+    border: none
+}
+
+.history-wrap .history-box table tr .syouwa {
+    background: #c9ffde
+}
+
+.history-wrap .history-box table tr .heisei {
+    background: #bee6ff
+}
+
+.history-wrap .history-box table tr .reiwa {
+    background: #fffcc1
+}
+
+.history-wrap .history-box table tr td {
+    border-bottom: 1px solid #404040;
+    padding: 10px 30px;
+    background: #fff
+}
+
+.history-wrap .history-box table tr .month {
+    background: #e3e3e3
+}
+
+.contact-wrap {
+    padding-bottom: 100px
+}
+
+.contact-wrap .contact-title {
+    background-image: url(../img/company_top.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 70px
+}
+
+.contact-wrap .contact-title h2 {
+    color: #fff;
+    padding: 60px 0 0;
+    line-height: 1.5;
+    margin: 0 auto;
+    width: 300px;
+    text-align: center;
+    font-size: 4rem;
+    border-bottom: 3px solid #ff532a
+}
+
+.contact-wrap .contact-box {
+    margin: 100px 200px;
+    background: #fff;
+    padding-bottom: 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center
+}
+
+.contact-wrap .contact-box ul {
+    line-height: 1.2
+}
+
+.contact-wrap .contact-box ul li {
+    width: 100%;
+    padding-top: 100px;
+    text-align: center;
+    display: flex
+}
+
+.contact-wrap .contact-box ul li img {
+    width: 100px;
+    margin: 0 10px
+}
+
+.contact-wrap .contact-box ul li .contact-inner h3 {
+    font-size: 4rem
+}
+
+.contact-wrap .contact-box ul li .contact-inner p {
+    color: #ff532a;
+    font-weight: bolder;
+    font-size: 5rem
+}
+
+.page-top-wrap {
+    width: 200px;
+    position: fixed;
+    right: 0;
+    bottom: 100px;
+    opacity: 0.6
+}
+
+.page-top-wrap a {
+    text-shadow: 0 0 3px #ffffff, 0 0 3px #ffffff, 0 0 3px #ffffff, 0 0 3px #ffffff, 0 0 3px #ffffff, 0 0 3px #ffffff, 0 0 3px #ffffff, 0 0 3px #ffffff, 0 0 3px #fcfcfc, 0 0 3px #ffffff, 0 0 3px #ffffff, 0 0 3px #ffffff, 0 0 3px #ffffff, 0 0 3px #ffffff, 0 0 3px #ffffff, 0 0 3px #ffffff;
+    text-align: center;
+    font-weight: bolder;
+    position: relative;
+    display: block;
+    width: 200px;
+    text-decoration: none
+}
+
+.page-top-wrap a br {
+    display: none
+}
+
+.page-top-wrap a img {
+    width: 200px
+}
+
+.page-top-wrap a::before {
+    font-weight: 900;
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center
+}
+
+footer {
+    padding: 20px 0;
+    text-align: center
+}
+
+@media screen and (max-width: 1500px) {
+    :root {
+        --main-width: 96%
+    }
+
+    .header-wrap {
+        padding: 0
+    }
+
+    .headerNav ul {
+        transition: all 0.6s;
+        overflow-y: auto;
+        padding-top: 59px;
+        width: 60%;
+        height: 100vh;
+        z-index: 200;
+        top: 0;
+        right: -62%;
+        background: rgba(255, 239, 232, 0.7);
+        position: fixed;
+        display: block;
+        border: none
+    }
+
+    .headerNav ul li {
+        border-top: 1px solid #000000;
+        border-right: none
+    }
+
+    .headerNav ul li:last-child {
+        border-bottom: 1px solid #000000
+    }
+
+    .sectMenu ul li {
+        width: 46%;
+        margin: 0 2% 30px;
+        border-top: 1px solid #000000
+    }
+
+    .headerNav ul li a::after {
+        display: none
+    }
+
+    .headerNav ul li a:hover::after {
+        display: none
+    }
+
+    .hamburger_wrap {
+        display: block
+    }
+
+    .hamburger {
+        width: 44px;
+        height: 44px;
+        z-index: 300;
+        top: 7px;
+        right: 7px;
+        cursor: pointer;
+        position: absolute
+    }
+
+    .hamburger_line {
+        transition: all 0.6s;
+        width: 34px;
+        height: 2px;
+        left: 5px;
+        background-color: #000;
+        position: absolute;
+        border-radius: 1px
+    }
+
+    .hamburger_line-1 {
+        top: 10px
+    }
+
+    .hamburger_line-2 {
+        top: 22px
+    }
+
+    .hamburger_line-3 {
+        top: 34px
+    }
+
+    .hamburger_bg {
+        opacity: 0;
+        transition: all 0.6s;
+        width: 100vw;
+        height: 100vh;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        visibility: hidden;
+        background-color: #000000;
+        cursor: pointer;
+        position: fixed
+    }
+
+    .navOpen .hamburger_line {
+        background-color: #000000
+    }
+
+    .navOpen .headerNav ul {
+        right: 0
+    }
+
+    .navOpen .hamburger_bg {
+        background: #000000;
+        opacity: 0.5;
+        visibility: visible
+    }
+
+    .navOpen .hamburger_line-1 {
+        transform: rotate(45deg);
+        top: 20px
+    }
+
+    .navOpen .hamburger_line-2 {
+        width: 0;
+        left: 50%
+    }
+
+    .navOpen .hamburger_line-3 {
+        transform: rotate(-45deg);
+        top: 20px
+    }
+
+    .top-wrap {
+        height: 100vh;
+        position: relative
+    }
+
+    .top-wrap .top-inner {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: 70%;
+        height: 100px
+    }
+
+    .top-wrap .top-inner .top-title {
+        padding: 0
+    }
+
+    .top-wrap .top-inner .top-fade {
+        display: block;
+        padding: 50px 0 0
+    }
+
+    .top-wrap .top-inner .top-fade .top-text {
+        margin-bottom: 50px
+    }
+
+    .content-wrap .content-img {
+        margin: 50px 150px 0
+    }
+
+    .content-wrap .content-img figure .back {
+        width: 200px
+    }
+
+    .content-wrap .content-img figure .fadein {
+        width: 200px
+    }
+
+    .content-wrap .content-area {
+        margin: 100px auto 0;
+        width: 90%
+    }
+
+    .content-wrap .content-area .content-listA-wrap .content-listA {
+        width: 45%
+    }
+
+    .content-wrap .content-area .content-listB-wrap .content-listB {
+        width: 30%
+    }
+
+    .content-wrap .content-area .content-listB-wrap .content-listB h4 {
+        font-size: 2rem;
+        border-right: 1px solid #ffffff
+    }
+
+    .content-wrap .content-area .content-listB-wrap .content-listB .content-box {
+        border-right: 1px solid #000000
+    }
+
+    .content-wrap .content-area .content-listB-wrap .content-listB .content-box p {
+        font-size: 2rem
+    }
+
+    .company-wrap .company-box {
+        margin: 100px auto;
+        width: 90%
+    }
+
+    .company-wrap .company-box table tr td {
+        margin-left: 50px
+    }
+
+    .company-wrap .company-box table tr td iframe {
+        width: 70%;
+        height: 100%
+    }
+
+    .history-wrap .history-box {
+        margin: 100px auto;
+        width: 90%
+    }
+
+    .history-wrap .history-box table tr th {
+        width: 20%;
+        text-align: center;
+        padding: inherit
+    }
+
+    .history-wrap .history-box table tr th br {
+        display: inherit
+    }
+
+    .history-wrap .history-box table tr td {
+        padding: 10px 30px
+    }
+
+    .history-wrap .history-box table tr .month {
+        text-align: center;
+        width: 10%;
+        padding: inherit
+    }
+
+    .contact-wrap {
+        padding-bottom: 100px
+    }
+
+    .contact-wrap .contact-box {
+        margin: 100px auto;
+        width: 90%
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .content-wrap .content-img {
+        margin: 50px auto;
+        width: 90%
+    }
+
+    .content-wrap .content-img figure .back {
+        width: 200px
+    }
+
+    .content-wrap .content-img figure .fadein {
+        width: 200px
+    }
+
+    .content-wrap .content-area {
+        margin: 100px auto 0;
+        width: 90%
+    }
+
+    .content-wrap .content-area .content-listA-wrap .content-listA {
+        width: 45%
+    }
+
+    .content-wrap .content-area .content-listB-wrap .content-listB {
+        width: 30%
+    }
+
+    .content-wrap .content-area .content-listB-wrap .content-listB h4 {
+        font-size: 2rem;
+        border-right: 1px solid #ffffff
+    }
+
+    .content-wrap .content-area .content-listB-wrap .content-listB .content-box {
+        border-right: 1px solid #000000
+    }
+
+    .content-wrap .content-area .content-listB-wrap .content-listB .content-box p {
+        font-size: 2rem
+    }
+
+    .company-wrap .company-box {
+        padding: 80px 10px
+    }
+
+    .company-wrap .company-box table tr th {
+        width: 100%;
+        display: block
+    }
+
+    .company-wrap .company-box table tr td {
+        width: 100%;
+        display: block
+    }
+
+    .page-top-wrap {
+        width: 100px
+    }
+
+    .page-top-wrap a {
+        width: 100px
+    }
+
+    .page-top-wrap a img {
+        width: 100px
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .header-wrap {
+        height: 60px
+    }
+
+    .header-wrap .logo {
+        width: 150px;
+        padding: 8px 0 0
+    }
+
+    .header-wrap .logo img {
+        width: 60px
+    }
+
+    .top-wrap .top-inner .top-title {
+        font-size: 4rem
+    }
+
+    .top-wrap .top-inner .top-fade .top-text {
+        font-size: 2rem
+    }
+
+    .content-wrap .content-img {
+        flex-direction: column
+    }
+
+    .content-wrap .content-img figure {
+        margin: 0 auto
+    }
+
+    .content-wrap .content-img figure .back {
+        margin-bottom: 10px;
+        width: 200px
+    }
+
+    .content-wrap .content-img figure .fadein {
+        margin-bottom: 10px;
+        width: 200px
+    }
+
+    .content-wrap .content-area .content-listA-wrap .content-listA {
+        width: 45%
+    }
+
+    .content-wrap .content-area .content-listA-wrap .content-listA h3 {
+        font-size: 2rem
+    }
+
+    .content-wrap .content-area .content-listA-wrap .content-listA p {
+        font-size: 1.6rem
+    }
+
+    .content-wrap .content-area .content-listB-wrap {
+        justify-content: none;
+        flex-direction: column
+    }
+
+    .content-wrap .content-area .content-listB-wrap .content-listB {
+        width: 100%;
+        text-align: center;
+        position: none
+    }
+
+    .content-wrap .content-area .content-listB-wrap .content-listB h4 {
+        font-size: 1.6rem;
+        margin: 0
+    }
+
+    .content-wrap .content-area .content-listB-wrap .content-listB .content-box {
+        border: none;
+        background: none;
+        height: inherit
+    }
+
+    .content-wrap .content-area .content-listB-wrap .content-listB .content-box p {
+        font-size: 1.6rem;
+        background: #ffffff
+    }
+
+    .company-wrap .company-box {
+        padding: 80px 10px
+    }
+
+    .company-wrap .company-box table {
+        width: 100%
+    }
+
+    .company-wrap .company-box table tr th {
+        width: 70%;
+        font-size: 1.6rem
+    }
+
+    .company-wrap .company-box table tr td {
+        margin-left: 10px;
+        width: 90%;
+        font-size: 1.3rem
+    }
+
+    .history-wrap .history-box table tr th {
+        width: 30%;
+        font-size: 1.3rem
+    }
+
+    .history-wrap .history-box table tr td {
+        font-size: 1.6rem
+    }
+
+    .history-wrap .history-box table tr .month {
+        font-size: 1.3rem
+    }
+
+    .contact-wrap .contact-title h2 {
+        padding-bottom: 30px
+    }
+
+    .contact-wrap .contact-box ul li img {
+        width: 20%
+    }
+
+    .contact-wrap .contact-box ul li .contact-inner h3 {
+        font-size: 2rem
+    }
+
+    .contact-wrap .contact-box ul li .contact-inner p {
+        font-size: 3rem
+    }
+
+    .page-top-wrap {
+        width: 70px;
+        bottom: 30px
+    }
+
+    .page-top-wrap a {
+        width: 70px
+    }
+
+    .page-top-wrap a br {
+        display: inherit
+    }
+
+    .page-top-wrap a img {
+        width: 70px
+    }
+}
+
+/*# sourceMappingURL=main.css.map */
